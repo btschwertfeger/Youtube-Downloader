@@ -1,6 +1,8 @@
 # Youtube-Downloader
 
-This is a minimal web application to download YouTube clips as mp4 and mp3.
+![Image](https://github.com/Crynetomega/images/blob/master/YouTubeDownloader/main.png?raw=true)
+
+This is a minimal web application to download YouTube clips as mp3 and mp4.
 
 # Disclaimer
 
@@ -12,14 +14,14 @@ Downloading media of which you are not the copyright owner is against the YouTub
 
 ```bash
 ╰─ which npm
-/Users/benjamin/.nvm/versions/node/v16.13.1/bin/npm
+/Users/user/.nvm/versions/node/v16.13.1/bin/npm
 ```
 
 ### NodeJS
 
 ```bash
 ╰─ which node
-/Users/benjamin/.nvm/versions/node/v16.13.1/bin/node
+/Users/user/.nvm/versions/node/v16.13.1/bin/node
 ```
 
 # Quick Start
