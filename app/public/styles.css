@@ -1,14 +1,22 @@
+/*
+<!--
+    ########################################
+    ## @author Benjamin Thomas Schwertfeger (2021)
+    ## https://github.com/Crynetomega/Youtube-Downloader
+    ############
+-->
+*/
+
 * {
   text-align: center;
 }
 .headline {
-  margin-top: 36vh;
+  margin-top: 28vh;
 }
-#url_input{
+
+#url_input {
   font-size: 1.3em;
   padding: 5px 10px;
-}
-#url_input {
   border-radius: 6px;
   width: 32em;
   text-align: left;
@@ -16,20 +24,26 @@
   background: #eeeeee;
   outline: none;
 }
+
 #url_input:focus {
   border: 2px solid #000000;
 }
 
-input[type=button]{
+input[type=button] {
   color: #FFFFFF;
 }
 
-.table-container{
+.table-container {
   width: 80rem;
   margin: 0 auto;
   margin-top: 3rem;
 }
-.notice{
+
+.bg-info {
+  color: #FFFFFF;
+}
+
+.notice {
   position: absolute;
   right: 8em;
   top: 2em;

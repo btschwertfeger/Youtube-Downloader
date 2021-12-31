@@ -1,3 +1,12 @@
+/*
+<!--
+    ########################################
+    ## @author Benjamin Thomas Schwertfeger (2021)
+    ## https://github.com/Crynetomega/Youtube-Downloader
+    ############
+-->
+*/
+
 /* * * * ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- * * * * 
  * * * ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- * * * 
  * * * -----> I M P O R T S <----- ----- ----- */
@@ -15,7 +24,7 @@ router.get("/download", (req, res) => {
     const query = req.query;
 
     if (typeof query.type === "undefined" || typeof query.URL === "undefined") res.status(404).end();
-    if (query.type !== "mp3" && query.type !== "mp4") res.status(404).end();
+    else if (query.type !== "mp3" && query.type !== "mp4") res.status(401).end();
     else {
         ytdl(query.URL, {
             format: query.type

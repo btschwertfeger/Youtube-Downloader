@@ -1,3 +1,12 @@
+/*
+<!--
+    ########################################
+    ## @author Benjamin Thomas Schwertfeger (2021)
+    ## https://github.com/Crynetomega/Youtube-Downloader
+    ############
+-->
+*/
+
 /* * * * ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- * * * * 
  * * * ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- * * * 
  * * * -----> I M P O R T S <----- ----- ----- */
@@ -26,7 +35,6 @@ const {
 
 app.engine("ejs", require("ejs").__express);
 app.set("view engine", "ejs");
-
 app.set("views", [
     path.join(__dirname, "views")
 ]);
@@ -47,7 +55,7 @@ app.use(session({
     saveUninitialized: true,
     secret: 'password1234',
     cookie: {
-        maxAge: 60000 * 60 * 24 * 14 // 14 Days
+        maxAge: 1000 * 60 * 60 * 24 * 14 // 14 Days
     }
 }))
 
@@ -58,7 +66,7 @@ app.use(session({
 app.use(routes);
 
 app.get('/', (req, res, next) => {
-    let history = [];
+    var history = [];
     if (!(typeof req.session.downloads === "undefined" || !req.session.downloads || req.session.downloads.length === 0)) history = req.session.downloads;
     res.render("index", {
         DOMAIN: DOMAIN,
