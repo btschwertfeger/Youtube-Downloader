@@ -14,7 +14,7 @@
 const
     router = require("express").Router(),
     ytdl = require("ytdl-core"),
-    contentDisposition = require('content-disposition');;
+    contentDisposition = require('content-disposition');
 
 /* * * * ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- * * * * 
  * * * ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- * * * 
